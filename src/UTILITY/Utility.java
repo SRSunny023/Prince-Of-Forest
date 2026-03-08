@@ -13,8 +13,27 @@ public class Utility{
      */
 
     public static void clearScreen(){
-        for(int i=0; i<30; i++){
-            System.out.println();
+        try {
+            String os = System.getProperty("os.name").toLowerCase();
+
+            if(System.console() == null){
+                for(int i=0; i<30; i++){
+                    System.out.println();
+                }
+                return;
+            }
+
+            if (os.contains("windows")) {
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            }
+            else {
+                new ProcessBuilder("clear").inheritIO().start().waitFor();
+            }
+
+        } catch (Exception e) {
+            for(int i=0; i<30; i++){
+                System.out.println();
+            }
         }
     }
 
