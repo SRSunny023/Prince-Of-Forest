@@ -67,23 +67,63 @@ Legend:
 
 ## 🚀 How to Run
 
-`1` Clone the repository:
+`1` **Go To The Directory Where You Want To Download The Game**
+
+`2` **Open The Terminal / PowerShell There**
+
+`3` **Clone the repository:**
 
 ```bash
 git clone https://github.com/SRSunny023/Prince-Of-Forest.git
 ```
 
-`2` Open the project in IntelliJ IDEA.
-
-`3` Build the project.
-
-`4` Run the main class:
+`4` **Now Go To The Game Directory By Writing This Command In Terminal / PowerShell**
 
 ```bash
-MAIN.PrinceOfForest
+cd Prince-Of-Forest
 ```
 
-`5` Follow on-screen instructions to play the game.
+`5` **Now Write The Following Command In Terminal / PowerShell**
+
+- **PowerShell**
+
+```bash
+Get-ChildItem -Recurse -Filter *.java src | ForEach-Object { $_.FullName } > sources.txt
+```
+
+- **Windows Terminal / Command**
+
+```bash
+dir /s /b src\*.java > sources.txt
+```
+
+- **Ubuntu / MAC Terminal**
+
+```bash
+find src -name "*.java" > sources.txt
+```
+
+`6` **Now Write The Following Command In Terminal / PowerShell**
+
+- **PowerShell**
+
+```bash
+javac -d . "@sources.txt"
+```
+
+- **Windows / Ubuntu / MAC / Terminal / Command**
+
+```bash
+javac -d . @sources.txt
+```
+
+`7` **Now Run The Game By Writing The Following Command In Terminal / PowerShell**
+
+```bash
+java MAIN.PrinceOfForest
+```
+
+`8` **Now You Can Run The Game Anytime Using The Step-7 Command Just Make Sure You Are Inside The Prince-Of-Forest Directory**
 
 ## 📂 Project Structure
 

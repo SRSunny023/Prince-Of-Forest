@@ -9,7 +9,7 @@ import java.util.Random;
  * exit, enemies, rewards, and traps within a 7x7 grid.
  */
 
-public class ChapterOneMap {
+public class Map {
 
     /** The number of rows and columns in the map grid. */
     public static int row = 7, col = 7;

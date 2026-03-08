@@ -19,14 +19,14 @@ public class ChapterList{
 
         System.out.print("Enemy\t\t\tHP\t\t\tATK\t\t\tDEF\t\t\tXP\n");
 
-        System.out.print("Goblin\t\t\t50\t\t\t10\t\t\t3\t\t\t20\nWildCat\t\t\t45\t\t\t8\t\t\t2\t\t\t18\n");
-        System.out.print("WildPup\t\t\t40\t\t\t7\t\t\t2\t\t\t15\nForestRabbit\t30\t\t\t5\t\t\t1\t\t\t10\n");
-        System.out.print("ForestSnake\t\t35\t\t\t6\t\t\t2\t\t\t12\nBandIt\t\t\t70\t\t\t15\t\t\t5\t\t\t30\n");
-        System.out.print("BullDog\t\t\t75\t\t\t12\t\t\t6\t\t\t28\nWolf\t\t\t80\t\t\t14\t\t\t5\t\t\t32\n");
-        System.out.print("GoblinArcher\t65\t\t\t13\t\t\t4\t\t\t25\nForestBearCub\t85\t\t\t16\t\t\t7\t\t\t35\n");
-        System.out.print("ForestTroll\t\t110\t\t\t20\t\t\t10\t\t\t50\nDarkGoblin\t\t100\t\t\t18\t\t\t8\t\t\t45\n");
-        System.out.print("ShadowWolf\t\t105\t\t\t19\t\t\t9\t\t\t48\nForestOgre\t\t115\t\t\t21\t\t\t11\t\t\t55\n");
-        System.out.print("WildBoar\t\t95\t\t\t17\t\t\t7\t\t\t42\nLion\t\t\t100\t\t\t17\t\t\t10\t\t\t80\n");
+        System.out.print("Goblin\t\t\t45\t\t\t7\t\t\t2\t\t\t10\nWildCat\t\t\t40\t\t\t8\t\t\t3\t\t\t9\n");
+        System.out.print("WildPup\t\t\t35\t\t\t6\t\t\t2\t\t\t8\nForestRabbit\t25\t\t\t5\t\t\t1\t\t\t6\n");
+        System.out.print("ForestSnake\t\t30\t\t\t6\t\t\t2\t\t\t7\nBandIt\t\t\t65\t\t\t11\t\t\t4\t\t\t16\n");
+        System.out.print("BullDog\t\t\t70\t\t\t10\t\t\t5\t\t\t15\nWolf\t\t\t75\t\t\t12\t\t\t4\t\t\t17\n");
+        System.out.print("GoblinArcher\t60\t\t\t11\t\t\t3\t\t\t14\nForestBearCub\t85\t\t\t13\t\t\t6\t\t\t20\n");
+        System.out.print("ForestTroll\t\t95\t\t\t14\t\t\t7\t\t\t24\nDarkGoblin\t\t90\t\t\t13\t\t\t6\t\t\t22\n");
+        System.out.print("ShadowWolf\t\t95\t\t\t14\t\t\t7\t\t\t23\nForestOgre\t\t99\t\t\t15\t\t\t9\t\t\t28\n");
+        System.out.print("WildBoar\t\t99\t\t\t16\t\t\t8\t\t\t27\nLion\t\t\t100\t\t\t17\t\t\t10\t\t\t30\n");
 
         System.out.println();
 
@@ -42,14 +42,14 @@ public class ChapterList{
 
         System.out.print("Enemy\t\t\tHP\t\t\tATK\t\t\tDEF\t\t\tXP\n");
 
-        System.out.print("Deer\t\t\t55\t\t\t10\t\t\t3\t\t\t20\nWildDog\t\t\t50\t\t\t9\t\t\t2\t\t\t18\n");
-        System.out.print("SwampFrog\t\t45\t\t\t8\t\t\t2\t\t\t15\nCrab\t\t\t40\t\t\t7\t\t\t3\t\t\t12\n");
-        System.out.print("MangroveBird\t35\t\t\t6\t\t\t1\t\t\t10\nPanther\t\t\t85\t\t\t16\t\t\t6\t\t\t35\n");
-        System.out.print("Rhino\t\t\t90\t\t\t18\t\t\t7\t\t\t38\nCrocodile\t\t95\t\t\t20\t\t\t8\t\t\t42\n");
-        System.out.print("MangroveBandit\t80\t\t\t15\t\t\t5\t\t\t30\nWildBoar\t\t85\t\t\t17\t\t\t6\t\t\t35\n");
-        System.out.print("SwampTroll\t\t120\t\t\t25\t\t\t12\t\t\t60\nDarkPanther\t\t110\t\t\t22\t\t\t10\t\t\t55\n");
-        System.out.print("GiantCrocodile\t125\t\t\t28\t\t\t14\t\t\t65\nOrcArcher\t\t105\t\t\t20\t\t\t10\t\t\t50\n");
-        System.out.print("MangroveOgre\t115\t\t\t24\t\t\t12\t\t\t60\nTiger\t\t\t180\t\t\t30\t\t\t15\t\t\t100\n");
+        System.out.print("Deer\t\t\t50\t\t\t8\t\t\t3\t\t\t15\nWildDog\t\t\t55\t\t\t9\t\t\t3\t\t\t16\n");
+        System.out.print("SwampFrog\t\t45\t\t\t8\t\t\t2\t\t\t15\nCrab\t\t\t40\t\t\t7\t\t\t2\t\t\t14\n");
+        System.out.print("MangroveBird\t35\t\t\t6\t\t\t2\t\t\t12\nPanther\t\t\t70\t\t\t12\t\t\t5\t\t\t22\n");
+        System.out.print("Rhino\t\t\t75\t\t\t13\t\t\t6\t\t\t24\nCrocodile\t\t80\t\t\t14\t\t\t6\t\t\t26\n");
+        System.out.print("MangroveBandit\t65\t\t\t12\t\t\t5\t\t\t20\nWildBear\t\t75\t\t\t13\t\t\t6\t\t\t24\n");
+        System.out.print("SwampTroll\t\t95\t\t\t16\t\t\t8\t\t\t38\nDarkPanther\t\t90\t\t\t15\t\t\t7\t\t\t36\n");
+        System.out.print("GiantCrocodile\t100\t\t\t7\t\t\t9\t\t\t40\nOrcArcher\t\t85\t\t\t15\t\t\t8\t\t\t35\n");
+        System.out.print("MangroveOgre\t110\t\t\t18\t\t\t10\t\t\t50\nTiger\t\t\t115\t\t\t20\t\t\t12\t\t\t55\n");
 
         System.out.println();
 

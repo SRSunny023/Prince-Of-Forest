@@ -1,9 +1,9 @@
 package MATCH;
 
+import ENEMY.ChapterTwoEnemy;
 import MAP.Map;
 import CHARACTER.*;
 import UTILITY.Utility;
-import ENEMY.ChapterOneEnemy;
 import STORY.Story;
 import FIGHT.*;
 
@@ -11,15 +11,15 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * Orchestrates the gameplay logic for the first chapter, "Forest of Shadows".
+ * Orchestrates the gameplay logic for the second chapter, "Mangrove Forest".
  * This class manages the exploration loop, movement tracking on the 2D map,
  * and triggers events such as combat, traps, and rewards based on player position.
  */
 
-public class ChapterOne{
+public class ChapterTwo{
 
     /**
-     * Runs the main gameplay loop for Chapter 1.
+     * Runs the main gameplay loop for Chapter 2.
      * Initializes the player's starting position, handles directional movement
      * input, and resolves tile-based events until the player reaches the exit
      * or their health reaches zero.
@@ -27,11 +27,11 @@ public class ChapterOne{
      * @param p the {@link Player} instance participating in the match
      */
 
-    public static void chapterOneMenu(Player p){
+    public static void chapterTwoMenu(Player p){
 
         Scanner input = new Scanner(System.in);
 
-        Story.showChapter1Story(p);
+        Story.showChapter2Story(p);
         System.out.println();
 
         Utility.pressToContinue(input);
@@ -118,7 +118,7 @@ public class ChapterOne{
                 }
 
                 case "O":{
-                    Enemies e = ChapterOneEnemy.createEnemy();
+                    Enemies e = ChapterTwoEnemy.createEnemy();
                     Story.enemyAppearStory(e);
                     e.displayEnemiesInfo();
                     Utility.pressToContinue(input);
@@ -130,14 +130,12 @@ public class ChapterOne{
 
                 case "E":{
                     System.out.println("END");
-                    int randBoss = rand.nextInt(3);
+                    int randBoss = rand.nextInt(2);
                     Enemies e;
                     if(randBoss==0){
-                        e = new Enemies("ForestOgre", 99, 15, 9, 28);
-                    } else if(randBoss==1){
-                        e = new Enemies("Lion", 100, 17, 10, 30);
+                        e = new Enemies("MangroveOgre", 110, 18, 10, 50);
                     } else{
-                        e = new Enemies("WildBoar", 99, 16, 8, 27);
+                        e = new Enemies("Tiger", 115, 20, 12, 55);
                     }
                     Story.bossAppearStory(e);
                     e.displayEnemiesInfo();
@@ -165,23 +163,34 @@ public class ChapterOne{
             p.printStats();
 
             if(p.hp<=0){
-                System.out.println("Game Over! You Have Failed To Escape The Forest of Shadows");
+                System.out.println("Game Over! You Have Failed To Escape The Mangrove Forest");
                 p.resetStats();
                 return;
             }
         }
 
-        System.out.println("The prince finally reaches the edge of the dark forest.");
-        System.out.println("The shadows slowly fade as sunlight breaks through the trees.");
+        System.out.println("The prince finally escapes the deep waters of the mangrove.");
+        System.out.println("The thick fog begins to clear as he steps onto solid ground.");
         System.out.println();
-        System.out.println("After countless traps and enemies, Prince " + p.name);
-        System.out.println("has survived the Forest of Shadows.");
+
+        System.out.println("After surviving deadly creatures and hidden dangers,");
+        System.out.println("Prince " + p.name + " has conquered the Mangrove Forest.");
         System.out.println();
-        System.out.println("In the distance, he sees the ruins of an ancient temple.");
-        System.out.println("A cold wind whispers...");
-        System.out.println("\"Your journey has only begun...\"");
+
+        System.out.println("Behind him, the swamp grows silent...");
+        System.out.println("as if the forest itself was watching his every move.");
         System.out.println();
-        System.out.println("=== Chapter 1 Complete ===\n");
+
+        System.out.println("Ahead, the land slowly transforms into dry sand");
+        System.out.println("stretching endlessly under the blazing sun.");
+        System.out.println("An ancient desert awaits beyond the horizon.");
+        System.out.println();
+
+        System.out.println("A distant voice echoes through the wind...");
+        System.out.println("\"The trials are only getting harder...\"");
+        System.out.println();
+
+        System.out.println("=== Chapter 2 Complete ===\n");
         p.chapter+=1;
         Utility.pressToContinue(input);
     }

@@ -35,6 +35,27 @@ public class Fight{
                 System.out.println("You Successfully Defeated " + e.name);
                 p.xp+=e.xp;
                 System.out.println("You have awarded: " + e.xp + " XP!");
+
+                int oldLevel = p.lvl;
+
+                if(p.xp>=1800)      p.lvl = 10;
+                else if(p.xp>=1370) p.lvl = 9;
+                else if(p.xp>=1020) p.lvl = 8;
+                else if(p.xp>=740)  p.lvl = 7;
+                else if(p.xp>=520)  p.lvl = 6;
+                else if(p.xp>=350)  p.lvl = 5;
+                else if(p.xp>=220)  p.lvl = 4;
+                else if(p.xp>=120)  p.lvl = 3;
+                else if(p.xp>=50)   p.lvl = 2;
+                else if(p.xp>=20)   p.lvl = 1;
+                else                p.lvl = 0;
+
+                if(p.lvl>oldLevel){
+                    int levelUpBonus = rand.nextInt(7) + 4;
+                    p.hp += levelUpBonus;
+                    System.out.println("Congratulations! You reached Level " + p.lvl + " and gained " + levelUpBonus + " bonus HP!");
+                }
+
                 int randHP = rand.nextInt(9)+1;
                 p.hp+=randHP;
                 System.out.println("You have awarded: " + randHP + " HP!");

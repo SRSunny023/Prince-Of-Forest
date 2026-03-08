@@ -50,6 +50,54 @@ public class Story {
 
     }
 
+    /**
+     * Displays the introduction and objective for Chapter 2.
+     *
+     * @param p the {@link Player} object used to retrieve character details like name
+     */
+
+    public static void showChapter2Story(Player p) {
+
+        System.out.println("======================================");
+        System.out.println("           PRINCE OF FOREST           ");
+        System.out.println("======================================");
+        System.out.println("Chapter 2: Mangrove Forest");
+        System.out.println();
+
+        System.out.println("After escaping the Forest of Shadows,");
+        System.out.println("Prince " + p.name + " follows a narrow path");
+        System.out.println("that leads him deeper into the unknown.");
+        System.out.println();
+
+        System.out.println("Soon the ground becomes wet and muddy,");
+        System.out.println("and twisted roots rise from the dark water.");
+        System.out.println();
+
+        System.out.println("He has entered the Mangrove Forest,");
+        System.out.println("a dense swamp where giant trees grow");
+        System.out.println("out of the water and the air is thick");
+        System.out.println("with fog and strange sounds.");
+        System.out.println();
+
+        System.out.println("Danger lurks beneath the water...");
+        System.out.println("Crocodiles, venomous creatures,");
+        System.out.println("and swamp guardians protect this land.");
+        System.out.println();
+
+        System.out.println("Somewhere inside the mangrove lies");
+        System.out.println("the hidden path that leads forward.");
+        System.out.println();
+
+        System.out.println("But the deeper the prince travels,");
+        System.out.println("the stronger the enemies become.");
+        System.out.println();
+
+        System.out.println("Objective: Find the Hidden Exit (E)");
+        System.out.println("and escape the Mangrove Forest.");
+        System.out.println("======================================");
+
+    }
+
 
 
 
@@ -321,6 +369,81 @@ public class Story {
                 System.out.println("Its sharp tusks point directly at the prince.");
                 break;
 
+            case "Deer":
+                System.out.println("A frightened Deer runs out from the mangrove trees.");
+                System.out.println("But something in its eyes seems strangely aggressive.");
+                break;
+
+            case "WildDog":
+                System.out.println("A hungry Wild Dog emerges from the muddy swamp.");
+                System.out.println("It growls as it slowly circles the prince.");
+                break;
+
+            case "SwampFrog":
+                System.out.println("A large Swamp Frog jumps from the wet ground.");
+                System.out.println("Its poisonous skin glows faintly.");
+                break;
+
+            case "Crab":
+                System.out.println("A giant Crab crawls out of the shallow water.");
+                System.out.println("Its sharp claws snap loudly.");
+                break;
+
+            case "MangroveBird":
+                System.out.println("A Mangrove Bird swoops down from the twisted branches.");
+                System.out.println("Its sharp beak aims for the prince.");
+                break;
+
+            case "Panther":
+                System.out.println("A silent Panther steps out of the fog.");
+                System.out.println("Its glowing eyes lock onto the prince.");
+                break;
+
+            case "Rhino":
+                System.out.println("The muddy ground begins to shake...");
+                System.out.println("A massive Rhino charges through the mangrove!");
+                break;
+
+            case "Crocodile":
+                System.out.println("The swamp water suddenly erupts!");
+                System.out.println("A Crocodile lunges toward the prince.");
+                break;
+
+            case "MagroveBandit":
+                System.out.println("A Mangrove Bandit jumps from behind a tangled root!");
+                System.out.println("\"Your journey ends here!\" he shouts.");
+                break;
+
+            case "WildBear":
+                System.out.println("A furious Wild Bear bursts out of the bushes!");
+                System.out.println("Its sharp tusks aim straight for the prince.");
+                break;
+
+            case "SwampTroll":
+                System.out.println("Heavy footsteps echo through the swamp...");
+                System.out.println("A massive Swamp Troll emerges from the fog.");
+                break;
+
+            case "DarkPanther":
+                System.out.println("A Dark Panther slowly appears from the shadows.");
+                System.out.println("Its body blends perfectly with the dark swamp.");
+                break;
+
+            case "GiantCrocodile":
+                System.out.println("The water begins to ripple violently...");
+                System.out.println("A Giant Crocodile rises from the swamp!");
+                break;
+
+            case "OrcArcher":
+                System.out.println("An Orc Archer climbs onto a mangrove root.");
+                System.out.println("He pulls an arrow and takes aim.");
+                break;
+
+            case "MangroveOgre":
+                System.out.println("The mangrove trees tremble...");
+                System.out.println("A towering Mangrove Ogre blocks the path.");
+                break;
+
             default:
                 System.out.println("Something emerges from the forest shadows...");
         }
@@ -354,23 +477,77 @@ public class Story {
                 System.out.println("Boss Incoming: " + e.name);
                 System.out.println("Prepare for the final battle of this chapter!\n");
 
+                break;
+
             }
 
             case "Tiger":{
 
-                System.out.println("The forest suddenly becomes silent...");
-                System.out.println("Even the wind stops moving through the trees.");
+                System.out.println("A sudden chill runs through the forest...");
+                System.out.println("The rustling leaves fade into an uneasy silence.");
                 System.out.println();
-                System.out.println("A deep roar echoes across the Forest of Shadows.");
-                System.out.println("From the darkness, a massive Lion steps forward.");
+                System.out.println("A low growl shakes the shadows between the trees.");
+                System.out.println("From the underbrush, a sleek Tiger emerges, muscles rippling.");
                 System.out.println();
-                System.out.println("Its golden eyes stare directly at the prince.");
-                System.out.println("This creature is the ruler of the forest.");
+                System.out.println("Its amber eyes glint with predatory focus.");
+                System.out.println("The tiger is swift, deadly, and the silent hunter of this forest.");
                 System.out.println();
                 System.out.println("Boss Incoming: " + e.name);
-                System.out.println("Prepare for the final battle of this chapter!\n");
+                System.out.println("Sharpen your reflexes—the hunt begins now!\n");
+
+                break;
 
             }
+
+            case "ForestOgre": {
+
+                System.out.println("The ground trembles beneath your feet...");
+                System.out.println("Birds scatter and branches snap under unseen weight.");
+                System.out.println();
+                System.out.println("From the shadows of the trees, a hulking Forest Ogre stomps forward.");
+                System.out.println();
+                System.out.println("Its eyes burn with fury, and its fists are like boulders.");
+                System.out.println("This ogre has defended the forest for centuries, and nothing passes unchallenged.");
+                System.out.println();
+                System.out.println("Boss Incoming: " + e.name);
+                System.out.println("Brace yourself—the clash of titans awaits!\n");
+
+                break;
+            }
+
+            case "WildBoar": {
+
+                System.out.println("The forest floor shakes violently...");
+                System.out.println("Twigs snap as a low, guttural snort echoes through the trees.");
+                System.out.println();
+                System.out.println("A massive Wild Boar bursts from the foliage, tusks glinting in the dim light.");
+                System.out.println();
+                System.out.println("Its eyes burn with primal rage.");
+                System.out.println("A relentless force of nature, it charges anyone who dares stand in its way.");
+                System.out.println();
+                System.out.println("Boss Incoming: " + e.name);
+                System.out.println("Hold your ground—the stampede is coming!\n");
+
+                break;
+            }
+
+
+            case "MangroveOgre": {
+
+                System.out.println("A foul mist creeps along the swampy forest floor...");
+                System.out.println("The air grows thick and heavy with the scent of decay.");
+                System.out.println();
+                System.out.println("From the twisted mangrove roots, the Mangrove Ogre emerges, dripping and monstrous.");
+                System.out.println();
+                System.out.println("Its eyes are sunken, its strength terrifying.");
+                System.out.println("Guardian of the swamp, it will not allow anyone to pass without a fight.");
+                System.out.println();
+                System.out.println("Boss Incoming: " + e.name);
+                System.out.println("Prepare for battle in the murky shadows!\n");
+
+                break;
+            }
+
             default:
                 System.out.println("Something emerges from the forest shadows...");
 

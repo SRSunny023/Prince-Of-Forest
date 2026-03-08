@@ -62,17 +62,19 @@ public class Player extends Princes{
         if(healPortion<0)   healPortion=0;
         if(attackPortion<0) attackPortion=0;
         if(defPortion<0)    defPortion=0;
-        System.out.println("NAME: " + name);
-        System.out.println("HP: " + hp);
-        System.out.println("ATTACK: " + atk);
-        System.out.println("DEFENCE: " + def);
-        System.out.println("LEVEL: " + lvl);
-        System.out.println("XP: " + xp);
-        System.out.println("CHAPTER: " + chapter);
-        System.out.println("POWERS: " + powers);
-        System.out.println("Heal Portion: " + healPortion);
-        System.out.println("Attack Portion: " + attackPortion);
-        System.out.println("Defence Portion: " + defPortion);
+
+        System.out.print("NAME\t\t\t\tHP\t\t\tATK\t\t\tDEF\t\t\tLVL\t\t\tXP\n\n");
+
+        System.out.print(name + "\t\t\t" + hp + "\t\t\t" + atk + "\t\t\t" + def + "\t\t\t" + lvl + "\t\t\t" + xp + "\n\n");
+
+        System.out.print("________________________________________________________________________\n\n");
+
+        System.out.print("CHAPTER\t\tPOWERS\t\t\t\tHealPortion\t\t\tAttackPortion\t\t\tDefencePortion\n\n");
+
+        System.out.print(chapter + "\t\t\t" + powers + "\t\t" + healPortion + "\t\t\t\t\t" + attackPortion + "\t\t\t\t\t\t" + defPortion + "\n");
+
+        System.out.print("_________________________________________________________________________\n\n");
+
     }
 
 

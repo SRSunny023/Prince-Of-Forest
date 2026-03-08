@@ -41,8 +41,17 @@ public class ChapterMenu{
             if(choice==1){
 
                 Utility.clearScreen();
-                ChapterOne.chapterOneMenu(p);
-                Utility.pressToContinue(input);
+
+                if(p.chapter==1){
+                    ChapterOne.chapterOneMenu(p);
+                    Utility.pressToContinue(input);
+                } else if(p.chapter==2){
+                    ChapterTwo.chapterTwoMenu(p);
+                    Utility.pressToContinue(input);
+                } else{
+                    System.out.println("Chapter 3 Development In Progress");
+                    Utility.pressToContinue(input);
+                }
 
             } else if(choice==2){
 

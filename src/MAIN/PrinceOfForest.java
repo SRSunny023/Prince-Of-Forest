@@ -9,19 +9,14 @@ import java.util.Scanner;
 
 /**
  * The entry point for the Prince of Forest application.
- * <p>
  * This class manages the primary application loop, handling navigation
  * between the main menu, character creation, and information screens.
- *
- * @author Siamur Rahman Sunny
- * @version 1.0
  */
 
 public class PrinceOfForest{
 
     /**
      * The main execution loop of the program.
-     * <p>
      * Displays the main menu and processes user input to trigger specific
      * game actions like starting a new game, viewing the "About" section,
      * or exiting.

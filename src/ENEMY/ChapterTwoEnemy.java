@@ -3,23 +3,23 @@ package ENEMY;
 import CHARACTER.Enemies;
 import UTILITY.Utility;
 
-import java.util.Scanner;
 import java.util.Random;
+import java.util.Scanner;
 
 
 /**
- * Factory class for spawning enemies specifically for Chapter 1.
+ * Factory class for spawning enemies specifically for Chapter 2.
  * <p>
  * This class contains the logic to randomly select and initialize
  * one of the various enemy archetypes found in the "Forest of Shadows."
  */
 
-public class ChapterOneEnemy{
+public class ChapterTwoEnemy {
 
     /**
      * Randomly selects and creates a new enemy instance.
      * <p>
-     * The method uses a random number generator to pick from 13 different
+     * The method uses a random number generator to pick from 14 different
      * enemy types, each with its own predefined health, attack, defense,
      * and XP reward values.
      *
@@ -28,7 +28,7 @@ public class ChapterOneEnemy{
 
     public static Enemies createEnemy(){
 
-        int numberOfEnemies = 13;
+        int numberOfEnemies = 14;
 
         Random rand = new Random();
         Scanner input = new Scanner(System.in);
@@ -38,55 +38,59 @@ public class ChapterOneEnemy{
 
         switch(randNum){
             case 0:{
-                e = new Enemies("Goblin", 45, 7, 2, 10);
+                e = new Enemies("Deer", 50, 8, 3, 15);
                 return e;
             }
             case 1:{
-                e = new Enemies("WildCat", 40, 8, 3, 9);
+                e = new Enemies("WildDog", 55, 9, 3, 16);
                 return e;
             }
             case 2:{
-                e = new Enemies("WildPup", 35, 6, 2, 8);
+                e = new Enemies("SwampFrog", 45, 8, 2, 15);
                 return e;
             }
             case 3:{
-                e = new Enemies("ForestRabbit", 25, 5, 1, 6);
+                e = new Enemies("Crab", 40, 7, 2, 14);
                 return e;
             }
             case 4:{
-                e = new Enemies("ForestSnake", 30, 6, 2, 7);
+                e = new Enemies("MangroveBird", 35, 6, 2, 12);
                 return e;
             }
             case 5:{
-                e = new Enemies("BandIt", 65, 11, 4, 16);
+                e = new Enemies("Panther", 70, 12, 5, 22);
                 return e;
             }
             case 6:{
-                e = new Enemies("BullDog", 70, 10, 5, 15);
+                e = new Enemies("Rhino", 75, 13, 6, 24);
                 return e;
             }
             case 7:{
-                e = new Enemies("Wolf", 75, 12, 4, 17);
+                e = new Enemies("Crocodile", 80, 14, 6, 26);
                 return e;
             }
             case 8:{
-                e = new Enemies("GoblinArcher", 60, 11, 3, 14);
+                e = new Enemies("MagroveBandit", 65, 12, 5, 20);
                 return e;
             }
             case 9:{
-                e = new Enemies("ForestBearCub", 85, 13, 6, 20);
+                e = new Enemies("WildBear", 75, 13, 6, 24);
                 return e;
             }
             case 10:{
-                e = new Enemies("ForestTroll", 95, 14, 7, 24);
+                e = new Enemies("SwampTroll", 95, 16, 8, 38);
                 return e;
             }
             case 11:{
-                e = new Enemies("DarkGoblin", 90, 13, 6, 22);
+                e = new Enemies("DarkPanther", 90, 15, 7, 36);
                 return e;
             }
             case 12:{
-                e = new Enemies("ShadowWolf", 95, 14, 7, 23);
+                e = new Enemies("GiantCrocodile", 100, 17, 9, 40);
+                return e;
+            }
+            case 13:{
+                e = new Enemies("OrcArcher", 85, 15, 8, 35);
                 return e;
             }
             default:{
@@ -99,5 +103,4 @@ public class ChapterOneEnemy{
         }
         return e;
     }
-
 }
